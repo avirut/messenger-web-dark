@@ -1,0 +1,17 @@
+{
+    "name": "Dark Mode for Messenger Web",
+    "version": "1.0",
+    "description": "Simple script to enable the hidden dark mode already built into messenger.com on page load",
+    "permissions": ["declarativeContent"],
+    "manifest_version": 2,
+
+    "content_scripts": [{
+        "js": ["darkmode.js"],
+        "matches": ["https://*.messenger.com/*"],
+        "run_at": "document_idle"
+    }],
+
+    "icons": {
+        "128": "messenger-web-dark-icon128.png"
+    }
+} 
