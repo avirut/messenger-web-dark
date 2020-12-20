@@ -1,1 +1,1 @@
-document.getElementById("facebook").classList.add("__fb-dark-mode");
+document.querySelector('html').classList.add('__fb-dark-mode')
